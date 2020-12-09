@@ -42,6 +42,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXy-y6-LPP">
                                 <rect key="frame" x="179.5" y="226" width="55" height="30"/>
                                 <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bj4-Lo-VeH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +71,12 @@
                             <constraint firstItem="ayt-c5-C7h" firstAttribute="top" secondItem="NdH-vr-rXT" secondAttribute="bottom" constant="8" symbolic="YES" id="y9f-Tc-7ej"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="p2q-B3-YHo" id="QKe-LJ-PQR"/>
+                        <outlet property="convertedLabel" destination="NdH-vr-rXT" id="n5h-kA-eYt"/>
+                        <outlet property="currencySegmentedControl" destination="lfo-W8-BVl" id="Xly-QS-uYH"/>
+                        <outlet property="rateTextField" destination="ayt-c5-C7h" id="LdH-Wj-k3a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
